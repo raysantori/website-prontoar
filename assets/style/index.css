@@ -1,0 +1,34 @@
+header{
+    background-color: var(--cor-primaria);
+    padding: 1rem 6%;
+    box-shadow: 2px 2px 12px rgba(61, 61, 61, 0.5);
+}
+
+header a{
+    color: var(--cor-fundo);
+}
+
+header a:hover{
+    color: var(--cor-sobreposta);
+}
+
+header ul{
+    list-style: none;
+}
+
+header li{
+    display: inline;
+    padding: 1rem;
+}
+
+header li:hover{
+    background-color: transparent;
+    border-bottom: 2px solid var(--cor-sobreposta);
+    border-radius: 4px;
+    transition: all .1s;
+}
+
+header a:nth-child(5)::before{
+    content: '';
+    border-right: 2px solid var(--cor-secundaria);
+}

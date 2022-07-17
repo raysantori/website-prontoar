@@ -1,0 +1,96 @@
+@import url(index.css);
+
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+
+*{
+    padding: 0; margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-primaria:#D93240;
+    --cor-secundaria:#2A54A2;
+    --cor-conteudo-destaque:#181818;
+    --cor-conteudo:#545454;
+    --cor-sobreposta:#FCFCFD;
+    --cor-fundo:#ececec;
+
+    --fonte-conteudo: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-conteudo);
+    font-size: 16px;
+    color: var(--cor-conteudo);
+}
+
+::selection{
+    background-color: var(--cor-primaria);
+}
+
+::-webkit-scrollbar{
+    width: 8px; height: 0;
+}
+
+::-webkit-scrollbar-track,::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-primaria);
+}
+
+.flex-center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-spacebetween-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 3rem;
+}
+
+footer{
+    padding: 1rem;
+}
+
+#copyright{
+    font-size: .9rem;
+    text-align: center;
+}
+
+.whatsapp{
+    position: absolute;
+    bottom: 0; right: 0;
+    margin: 25px;
+}
+
+.whatsapp:hover{
+    transform: translateY(-16px);
+    transition: all .5s;
+}
+
+.whatsapp i{
+    color: var(--cor-secundaria);
+    font-size: 2.5rem;
+}
+
+.whatsapp i:hover{
+    color: var(--cor-conteudo-destaque);
+}
