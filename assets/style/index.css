@@ -32,3 +32,15 @@ header a:nth-child(5)::before{
     content: '';
     border-right: 2px solid var(--cor-secundaria);
 }
+
+section{
+    padding: 1rem 6%;
+}
+
+.bloco-contato{
+    width: 33.3%;
+}
+
+#contato, footer{
+    background-color: var(--cor-sobreposta);
+}
